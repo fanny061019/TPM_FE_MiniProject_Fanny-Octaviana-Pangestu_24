@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <div class="top-area">
+      <button class="regis-btn">REGISTRASION</button>
+    </div>
+    <div class="wrap">
+      <div class="card">
+        <!-- KIRI GAMBAR -->
+        <div class="left">
+          <img src="Aset/Rectangle 14.png" alt="" />
+        </div>
+
+        <!-- KANAN FORM -->
+        <div class="right">
+          <h1>Log in to Fumart</h1>
+
+          <form id="loginForm">
+            <div class="field">
+              <label>Email Address</label>
+              <input type="email" placeholder="johndoe@example.com" />
+            </div>
+
+            <div class="field password-field">
+              <label>Password</label>
+              <input type="password" placeholder="*******" id="password" />
+              <img
+                src="Aset/eye.png"
+                class="toggle-eye"
+                data-target="password"
+              />
+            </div>
+
+            <div class="agree">
+              <input type="checkbox" id="terms" />
+              <label for="terms">Remember Me</label>
+            </div>
+
+            <button type="submit">PROCEED</button>
+
+            <div class="or">
+              <span>OR</span>
+            </div>
+
+            <div class="socials">
+              <div class="social-box">
+                <img src="Aset/google.png" alt="" />
+              </div>
+              <div class="social-box">
+                <img src="Aset/apple.png" alt="" />
+              </div>
+              <div class="social-box">
+                <img src="Aset/facebook.png" alt="" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">© 2021 - 2025 All Rights Reserved.Fumart</div>
+    <script src="Login.js"></script>
+  </body>
+</html>

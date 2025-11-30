@@ -1,0 +1,276 @@
+/* Center */
+body,
+html {
+  margin: 0;
+  height: 100%;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url("Aset/vivid-blurred-colorful-wallpaper-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start; /* dari tengah → ke atas */
+  padding-top: 40px; /* kasih jarak dikit */
+}
+
+/* MAIN CARD */
+.card {
+  width: 1075px;
+  height: 580px;
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* LEFT IMAGE */
+.left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+  object-position: -49px center; /* geser 20px ke kiri */
+}
+
+/* RIGHT FORM */
+.right {
+  width: 500px;
+  padding: 50px 45px;
+  background: white;
+}
+
+.right h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+
+  background: linear-gradient(90deg, #8fcef5 20%, #4986db 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+/* LABEL */
+.right label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+/* INPUT */
+.right input {
+  padding: 14px;
+  border: 1px solid #999;
+  border-radius: 0; /* kotak tegas */
+  font-size: 14px;
+  outline: none;
+}
+
+.right input:focus {
+  border: 1px solid #5da8ff;
+}
+
+/* SPACING */
+.right form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+/* SUBMIT BUTTON */
+.right button {
+  margin-top: 25px;
+  padding: 15px;
+  font-size: 16px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 0; /* kotak */
+  cursor: pointer;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+.right button:hover {
+  background: #000;
+}
+
+.top-area {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 50px 0 0;
+}
+
+.regis-btn {
+  padding: 15px 35px;
+  background: transparent; /* jadi transparan */
+  border: 2px solid black; /* border hitam */
+  cursor: pointer;
+  font-weight: 600;
+  color: black; /* teks tetap hitam */
+}
+
+/* Container input */
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Kotak input */
+.field input {
+  width: 100%;
+  padding: 25px 14px 10px 17px; /* top lebih besar */
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 0;
+  outline: none;
+}
+
+.field input::placeholder {
+  color: #aaa;
+  font-size: 16px;
+  transform: translateY(6px);
+}
+
+.field input:focus {
+  border-color: #5da8ff;
+}
+
+/* Label di dalam border */
+.field label {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  background: white;
+  padding: 0 4px;
+  pointer-events: none;
+}
+
+.agree {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-bottom: -6px;
+}
+
+.agree input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.agree label {
+  font-size: 11px;
+  color: #666;
+  cursor: pointer;
+}
+
+/* OR text */
+.or {
+  text-align: center;
+  margin: 20px 0 15px 0;
+}
+
+.or span {
+  font-size: 13px;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+/* SOCIAL ICON WRAPPER */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -10px;
+}
+
+/* BOX untuk tiap icon */
+.social-box {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+/* efek hover */
+.social-box:hover {
+  border-color: #5da8ff;
+}
+
+/* gambar/icon di dalam kotak */
+.social-box img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0 40px;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.55);
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.password-field {
+  position: relative;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-6px); /* sedikit naik biar pas */
+  width: 24px; /* ukuran lebih besar */
+  height: 24px;
+  cursor: pointer;
+  filter: contrast(5%); /* bikin garis icon lebih tebal */
+}
+
+.toggle-eye:hover {
+  opacity: 0.8;
+}
+
+.agree {
+  text-decoration: underline;
+  text-underline-offset: 2px; /* jarak garis dengan teks */
+  text-decoration-thickness: 1px; /* ketebalan */
+}
